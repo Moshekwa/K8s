@@ -1,10 +1,8 @@
-apiVersion: v1
+apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: postgres
-  namespace: default
 spec:
-  serviceName: postgres
   replicas: 1
   selector:
     matchLabels:
@@ -29,6 +27,4 @@ spec:
         - name: postgres-data
           persistentVolumeClaim:
             claimName: postgres-pvc
-        - name:
-            configMap:
-              name: postgres-configmap
+
