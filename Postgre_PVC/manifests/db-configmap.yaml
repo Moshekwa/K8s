@@ -4,8 +4,8 @@ metadata:
   name: postgres-configmap
   namespace: default
 data:
-  POSTGRES_DB: testdb
-  POSTGRES_PORT: 9471
-  POSTGRES_PASSWORD: adminpwd
-  POSTGRES_HOST: 10.0.2.15
-  POSTGRES_USER: admin
+  POSTGRES_DB: "testdb"
+  POSTGRES_PORT: "9471"
+  POSTGRES_PASSWORD: "adminpwd"
+  POSTGRES_HOST: "10.0.2.15"
+  POSTGRES_USER: "admin"

@@ -5,4 +5,6 @@ metadata:
 spec:
   type: NodePort
   ports:
-    port: 9471
+    - protocol: TCP
+      port: 9471
+      targetPort: 9471
