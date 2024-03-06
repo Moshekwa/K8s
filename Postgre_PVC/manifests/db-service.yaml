@@ -6,5 +6,5 @@ spec:
   type: NodePort
   ports:
     - protocol: TCP
-      port: 9471
-      targetPort: 9471
+      port: 5432
+      targetPort: 5432
